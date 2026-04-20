@@ -37,6 +37,11 @@ object AppModule {
     @Provides
     @Singleton
     fun provideMoodRepository(impl: MoodRepositoryImpl): MoodRepository {
+    }
+
+    @Provides
+    @Singleton
+    fun provideChatRepository(impl: com.mentalwell.ai.data.repository.ChatRepositoryImpl): com.mentalwell.ai.domain.repository_interface.ChatRepository {
         return impl
     }
 }
