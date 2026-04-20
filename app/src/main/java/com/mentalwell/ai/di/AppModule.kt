@@ -42,6 +42,11 @@ object AppModule {
     @Provides
     @Singleton
     fun provideChatRepository(impl: com.mentalwell.ai.data.repository.ChatRepositoryImpl): com.mentalwell.ai.domain.repository_interface.ChatRepository {
+    }
+
+    @Provides
+    @Singleton
+    fun provideJournalRepository(impl: com.mentalwell.ai.data.repository.JournalRepositoryImpl): com.mentalwell.ai.domain.repository_interface.JournalRepository {
         return impl
     }
 }
